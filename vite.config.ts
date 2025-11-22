@@ -21,5 +21,12 @@ export default defineConfig(({ mode }) => {
         "@": path.resolve(__dirname, "."),
       },
     },
+    // ¡¡¡ASEGÚRATE DE QUE ESTE BLOQUE ESTÉ AQUÍ Y CORRECTO!!!
+    build: {
+      rollupOptions: {
+        input: "index.html", // Esto le dice a Vite dónde buscar el index.html para la compilación
+      },
+    },
+    // --- FIN DEL BLOQUE ---
   };
 });
