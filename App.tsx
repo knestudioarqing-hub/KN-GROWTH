@@ -3,7 +3,6 @@ import Navbar from './components/Navbar';
 import ProjectCard from './components/ProjectCard';
 import AiConsultant from './components/AiConsultant';
 import TechBackground from './components/TechBackground';
-import SphereBenefits from './components/SphereBenefits';
 import { Project } from './types';
 import { Github, Linkedin, Mail, ArrowRight } from 'lucide-react';
 
@@ -55,7 +54,7 @@ const App: React.FC = () => {
       {/* Hero Section */}
       <header className="relative min-h-screen flex items-center pt-20 overflow-hidden">
         
-        {/* 3D Background - Replaces static blobs */}
+        {/* 3D Background */}
         <Suspense fallback={<div className="absolute inset-0 bg-kn-bg" />}>
           <TechBackground />
         </Suspense>
@@ -96,9 +95,6 @@ const App: React.FC = () => {
           <div className="w-[1px] h-12 bg-gradient-to-b from-kn-muted to-transparent"></div>
         </div>
       </header>
-
-      {/* 3D Interactive Benefits Section */}
-      <SphereBenefits />
 
       {/* Projects Grid */}
       <section id="projects" className="py-32 bg-[#080808] relative z-10">
